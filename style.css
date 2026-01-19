@@ -65,10 +65,17 @@ body {
 
 
 .hero-sect {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
-    height: 466px;
-    z-index: 10;
+    /* min-width: none; */
+    /* height: 466px; */
+    min-height: 386px;
+    /* z-index: 10; */
+
 }
 
 .hero-bg {
@@ -76,9 +83,11 @@ body {
     background-size: cover;
     /* position: relative; */
     /* height: 466px; */
+
 }
 
 .mic-bg-sect {
+    
     width: 200px;
     height: 200px;
     margin: 0px auto;
@@ -86,6 +95,9 @@ body {
 }
 
 .mic-bg {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     background: url("./assets/hero-circle.png") no-repeat center;
@@ -117,10 +129,17 @@ body {
     .hero-bg {
         height: 620px;
     }
+    /* .hero-sect {
+    margin-top: 71px;
+    } */
+
 }
 
 @media (min-width: 992px) {
+    /* .hero-sect {
+    margin-top: 101px;
+    } */
     .hero-bg {
-        height: 720px
+        min-height: 720px
     }
 }
