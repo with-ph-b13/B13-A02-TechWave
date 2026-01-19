@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+body {
     background-color: #1a0b2e;
 }
 
-.btn {
-    background: linear-gradient(30deg, #FFDD00 20%, #FF2975 50%, #8C1BAB 100%);
+.nav-btn {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     border: none;
     /* border-radius: 10%; */
     border-radius: 10px;
@@ -28,5 +33,31 @@
 
 .nav-logo {
     width: 137px;
-    height: 20px;
+    height: 24px;
+}
+
+.nav-menu {
+    gap: 30px;
+}
+
+/* tab */
+@media (min-width: 576px) {
+    .hidden {
+        display: flex !important;
+
+    }
+
+    .nav-logo {
+        width: 219px;
+        height: 32px;
+    }
+
+    .hidden2 {
+        display: none;
+    }
+}
+
+/* pc */
+@media (min-width: 992px) {
+    
 }
