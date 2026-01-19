@@ -1,5 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #1a0b2e;
+}
+
 .btn {
     background: linear-gradient(30deg, #FFDD00 20%, #FF2975 50%, #8C1BAB 100%);
     border: none;
+    /* border-radius: 10%; */
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+
+.text-white {
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-moba {
+    padding: 16px 24px;
+}
+
+.nav-logo {
+    width: 137px;
+    height: 20px;
 }

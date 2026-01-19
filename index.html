@@ -9,23 +9,27 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+
+    </style>
+
 </head>
 
-<body>
-    <header>
-        <nav class="flex">
-            <a href="#">tech
-                <span
-                    class="bg-gradient-to-tr from-yellow-200 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-                    Wave
-                </span>
+<body class="bg-color text-white">
+    <header class="header">
+        <nav class="navbar flex justify-between items-center nav-moba">
+            <a href="#">
+                <img src="./assets/TechWave.png" alt="TechWave Logo" class="nav-logo">
             </a>
-            <div>
-                <a href="" src="#">About</a>
-                <a href="" src="#">Episodes</a>
-                <a href="" src="#">Host</a>
+            <div class="flex">
+                <div class="flex nav-links hidden">
+                    <a href="" src="#">About</a>
+                    <a href="" src="#">Episodes</a>
+                    <a href="" src="#">Host</a>
+                </div>
+                <button class="btn hidden">Subscribe</button>
+                <img src="./assets/hamburger-menu.png" alt="" class="burger" style=" width: 24px;height: 24px;">
             </div>
-            <button class="btn">Subscribe</button>
         </nav>
     </header>
 
