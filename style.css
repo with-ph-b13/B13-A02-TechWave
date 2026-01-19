@@ -11,6 +11,12 @@ body {
     background-color: #1a0b2e;
 }
 
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 .nav-btn {
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1), rgba(247, 233, 63, 1));
     border: none;
@@ -25,9 +31,11 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -146,7 +154,7 @@ body {
 }
 
 .btn-outline {
-    border: 1px solid  #00FF88;
+    border: 1px solid #00FF88;
     color: #00FF88;
     padding: 12px 20px;
     border-radius: 9999px;
@@ -155,8 +163,349 @@ body {
     cursor: pointer;
 }
 
-.btn-outline:hover{
-    background: rgba(0, 255, 136, 1);
+.btn-outline:hover {
+    background: rgb(21, 255, 0);
     color: rgb(0, 0, 0);
 
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-header p {
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+}
+
+.stat-item h3 {
+    color: #00FF88;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.stat-item p {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-moba {
+    margin: 40px auto;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 24px;
+}
+
+@media (min-width: 992px) {
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .feature-tall {
+        grid-row: span 2;
+        height: 100%;
+    }
+
+    .feature-tall2 {
+        grid-column: span 2;
+    }
+}
+
+
+.feature-card {
+    background: #1f1137;
+    border-radius: 24px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 16px;
+}
+
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-weight: 400;
+}
+
+.feature-icon svg {
+    width: 60px;
+    height: 60px;
+}
+
+
+.section-host {
+    margin: 24px;
+
+}
+
+footer {
+    background-image: url(./assets/footer-bg.png);
+    width: 100%;
+    min-height: 412px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-contant {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer-name {
+    margin-bottom: 32px;
+}
+
+.footer-all-p {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.footer-box img {
+    width: 24px;
+    height: 24px;
+}
+
+#foter-copy {
+    padding-top: 40px;
+    color: #FFFFFF;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .footer-all-p {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 20px;
+    }
+}
+
+.meet-host {
+    font-style: Bold;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 24px;
+
+}
+
+.host-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    margin-bottom: 120px;
+    border-radius: 24px;
+    background: rgba(53, 17, 101, 0.4);
+}
+
+@media (min-width: 576px) {
+    .host-card {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .meet-host {
+        font-size: 48px;
+        margin-bottom: 40px;
+
+    }
+
+    .host-card {
+        padding: 40px;
+        border-radius: 40px;
+    }
+
+}
+
+.host-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #1a0b2e;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.host-info h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.host-info p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 16px 0px;
+}
+
+.section-header {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-style: Bold;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.episodes-grid {
+    margin: 120px 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin: 60px 20px;
+}
+
+@media (min-width: 576px) {
+    .episodes-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 992px) {
+    .episodes-grid {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+
+.episode-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.episode-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 24px 24px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.episode-thumb iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+
+.episode-content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 0px 0px 24px 24px;
+    background: rgba(37, 13, 68, 1);
+}
+
+@media (max-width: 575px) {
+    .episode-card {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .episode-card {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .episode-card {
+        max-width: 380px;
+    }
+
+    .episode-content {
+        height: 226px;
+    }
+}
+
+.episode-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.episode-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.episode-tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.episode-tag img {
+    width: 20px;
+    height: 20px;
 }
