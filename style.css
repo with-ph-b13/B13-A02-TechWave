@@ -12,11 +12,25 @@ body {
 }
 
 .nav-btn {
-    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1), rgba(247, 233, 63, 1));
     border: none;
     /* border-radius: 10%; */
     border-radius: 10px;
     padding: 12px 16px;
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .text-white {
@@ -63,44 +77,35 @@ body {
     }
 }
 
-
-.hero-sect {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.with-hero {
+    background: url('./assets/hero-bg.png') no-repeat center top;
+    background-size: cover;
     position: relative;
-    text-align: center;
-    /* min-width: none; */
-    /* height: 466px; */
-    min-height: 386px;
-    /* z-index: 10; */
-
+    padding-bottom: 120px;
 }
 
-.hero-bg {
-    background: url('../assets/hero-bg.png') no-repeat center top;
-    background-size: cover;
-    /* position: relative; */
-    /* height: 466px; */
-
+.hero {
+    position: relative;
+    padding: 8rem 0 0;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .mic-bg-sect {
-    
-    width: 200px;
-    height: 200px;
-    margin: 0px auto;
-    position: relative
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 2rem;
 }
 
 .mic-bg {
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background: url("./assets/hero-circle.png") no-repeat center;
+    background: url('./assets/hero-circle.png') no-repeat center;
     background-size: contain;
     display: flex;
     align-items: center;
@@ -108,38 +113,50 @@ body {
     position: relative;
 }
 
-
 .mic-badge-new {
     position: absolute;
-    top: 1%;
-    right: 1%;
-    color: rgba(26, 11, 46, 1);
+    top: 5%;
+    right: 5%;
+    color: #0F0417;
+    background: #00FF88;
     font-style: Semi Bold;
     font-size: 16px;
     font-weight: 600;
+    padding: 8px 16px;
     border-radius: 9999px;
     text-transform: uppercase;
-    background: #00FF88;
     box-shadow: 0 0 20px rgba(0, 255, 148, 0.4);
     letter-spacing: 1px;
-    padding: 8px 16px;
 }
 
-@media (min-width: 576px) {
-    .hero-bg {
-        height: 620px;
-    }
-    /* .hero-sect {
-    margin-top: 71px;
-    } */
-
+.hero h1 {
+    font-size: clamp(3.5rem, 8vw, 5rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: white;
 }
 
-@media (min-width: 992px) {
-    /* .hero-sect {
-    margin-top: 101px;
-    } */
-    .hero-bg {
-        min-height: 720px
-    }
+.hero p {
+    color: white;
+    font-size: 1.125rem;
+    max-width: 550px;
+    margin: auto 20px;
+}
+
+.btn-outline {
+    border: 1px solid  #00FF88;
+    color: #00FF88;
+    padding: 12px 20px;
+    border-radius: 9999px;
+    font-weight: 700;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-outline:hover{
+    background: rgba(0, 255, 136, 1);
+    color: rgb(0, 0, 0);
+
 }
