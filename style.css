@@ -28,7 +28,7 @@ body {
 }
 
 .nav-moba {
-    padding: 16px 24px;
+    padding: 16px 20px;
 }
 
 .nav-logo {
@@ -63,5 +63,64 @@ body {
     }
 }
 
-/* pc */
-@media (min-width: 992px) {}
+
+.hero-sect {
+    position: relative;
+    text-align: center;
+    height: 466px;
+    z-index: 10;
+}
+
+.hero-bg {
+    background: url('../assets/hero-bg.png') no-repeat center top;
+    background-size: cover;
+    /* position: relative; */
+    /* height: 466px; */
+}
+
+.mic-bg-sect {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    position: relative
+}
+
+.mic-bg {
+    width: 100%;
+    height: 100%;
+    background: url("./assets/hero-circle.png") no-repeat center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.mic-badge-new {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    color: rgba(26, 11, 46, 1);
+    font-style: Semi Bold;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    background: #00FF88;
+    box-shadow: 0 0 20px rgba(0, 255, 148, 0.4);
+    letter-spacing: 1px;
+    padding: 8px 16px;
+}
+
+@media (min-width: 576px) {
+    .hero-bg {
+        height: 620px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-bg {
+        height: 720px
+    }
+}
