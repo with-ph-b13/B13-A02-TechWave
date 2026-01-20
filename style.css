@@ -316,7 +316,7 @@ footer {
 }
 
 #foter-copy {
-    padding-top: 40px;
+    padding-top: 20px;
     color: #FFFFFF;
     font-size: 15px;
     opacity: 0.8;
@@ -514,4 +514,11 @@ footer {
 .episode-tag img {
     width: 20px;
     height: 20px;
+}
+
+#line {
+  margin-top: 20px;
+  height: 0%;
+  border: 1px solid rgba(229, 231, 235, 1);
+  opacity: 0.2;
 }
