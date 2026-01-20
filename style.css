@@ -67,9 +67,9 @@ body {
 
 
 }
-.navbar{
-        margin: 16px auto;
-    }
+
+.navbar {}
+
 /* tab */
 @media (min-width: 576px) {
     .hidden {
@@ -86,14 +86,14 @@ body {
         display: none;
     }
 
-    .navbar{
-        margin: 16px 50px;
+    .navbar {
+        padding: 16px 80px 16px 80px;
     }
 }
 
 @media (min-width: 992px) {
-    .navbar{
-        margin: 16px 80px;
+    .navbar {
+        padding: 16px 200px 16px 200px;
     }
 }
 
@@ -189,7 +189,7 @@ body {
 }
 
 .section-header p {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-weight: 400;
 }
 
@@ -199,8 +199,8 @@ body {
     gap: 40px;
     text-align: center;
     margin-top: 80px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 100%;
 }
 
@@ -226,7 +226,12 @@ body {
 }
 
 .about-moba {
-    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -251,6 +256,11 @@ body {
     .feature-tall2 {
         grid-column: span 2;
     }
+
+    .about-moba {
+        margin: 0 auto;
+        padding: 50px 200px 120px 200px;
+    }
 }
 
 
@@ -263,7 +273,7 @@ body {
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
-    
+
     gap: 16px;
 }
 
@@ -536,8 +546,8 @@ footer {
 }
 
 #line {
-  margin-top: 20px;
-  height: 0%;
-  border: 1px solid rgba(229, 231, 235, 1);
-  opacity: 0.2;
+    margin-top: 20px;
+    height: 0%;
+    border: 1px solid rgba(229, 231, 235, 1);
+    opacity: 0.2;
 }
