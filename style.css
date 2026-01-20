@@ -67,7 +67,9 @@ body {
 
 
 }
-
+.navbar{
+        margin: 16px auto;
+    }
 /* tab */
 @media (min-width: 576px) {
     .hidden {
@@ -83,7 +85,19 @@ body {
     .hidden2 {
         display: none;
     }
+
+    .navbar{
+        margin: 16px 50px;
+    }
 }
+
+@media (min-width: 992px) {
+    .navbar{
+        margin: 16px 80px;
+    }
+}
+
+
 
 .with-hero {
     background: url('./assets/hero-bg.png') no-repeat center top;
